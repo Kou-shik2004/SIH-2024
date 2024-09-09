@@ -85,6 +85,6 @@ twine==5.1.1
 typing_extensions==4.12.2
 tzdata==2024.1
 urllib3==2.2.2
--e git+ssh://git@github.com/Kou-shik2004/SIH-2024.git@cc0c05ccd9493b4cad2a09d7cf2ae44d03f2fe00#egg=voxws
+-e .
 wget==3.2
 zipp==3.20.1
