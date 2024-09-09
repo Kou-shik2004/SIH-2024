@@ -37,10 +37,10 @@ def load(encoder_name: str = "base", language: str = "multi",
         wget.download(model_weights_url, out=model_weights)
 
     model = pt.ProtoNet(bk.Backbone(encoder_name=encoder_name))
-    checkpoint = torch.load(model_weights, map_location=torch.device(device))
+    checkpoint = torch.load(model_weights, map_location=torch.device(device), weights_only=True)
     model.load_state_dict(checkpoint)
     model.eval()
     model.to(device)
-
+    print("Inference completed.")
     return model
 

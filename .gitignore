@@ -1,1 +1,4 @@
-venv/
+sihvenv/
+voxws.egg-info/
+dist/
+models/

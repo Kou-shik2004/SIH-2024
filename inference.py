@@ -1,7 +1,7 @@
 import numpy as np
 import pyaudio
 import torch
-from plixkws import model, util
+from voxws import model, util
 
 sample_rate = 16000
 frames_per_buffer = 512
